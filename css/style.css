@@ -3,7 +3,7 @@
     padding:0;
 }
 body { 
-    background-image: url(bg1.jpg);
+    background-image: url(../img/bg.jpg);
     background-position:top;
     background-size: cover auto;
     background-repeat: no-repeat;
@@ -114,8 +114,9 @@ main .works h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     font-weight: 300;
-    color:#fb1c37;
+    color:#fff;
     text-align: center;
+    display: block;
 }
 .works-container {
     display: flex;
@@ -127,20 +128,22 @@ main .works h2 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: #fff;
+    margin: 30px;
+    width:235px;
 
 
 }
-.work-container img{
-    border-radius: 4px;
-    margin-top: 60px;
+
+
+
+.description{
+    color:#fff;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
 }
 
-.work-container img, 
-.work-container p {
-    display: block;
-    margin-bottom: 10px;
 
-}
+
 
 .form-container {
     padding: 60px 0px;
@@ -148,26 +151,7 @@ main .works h2 {
      background: #2a2b2e;
 
 }
-.work-container p {
-
-    font-weight:300;
-}
-    .css{
-
-    font-weight:bold;
-    color: #fb1c37;
-
-}
-.html{
-
-    font-weight: bold;
-    color: #fb1c37;
-}
-.javascript{
-
-    font-weight:bold;
-    color: #fb1c37;
-}
+    
 .form-container h2 {
     margin-bottom: 60px;
     font-family: 'Open Sans', sans-serif;
@@ -228,6 +212,15 @@ main .works h2 {
 
 
 }
+
+h4{
+    color: #fb1c37;
+    font-weight:bold;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+
 
 @media and screen(min-width: 990px){
     .works-container{
