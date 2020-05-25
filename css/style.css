@@ -3,35 +3,40 @@
     padding:0;
 }
 body { 
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/bg1.jpg);
     background-position:top;
-    background-size: cover auto;
+    background-size:100% 600px;
     background-repeat: no-repeat;
+    background-color: #222222;
 }
-
-.container {
-    margin: auto;
+.wrapper {
     width: 1000px;
+    margin: auto;
     max-width: 100%;
 }
- header{
+/*HEADER*/
+
+ .header {
+
     display: flex;
     flex-direction: column;
-    height: 657.5px;
+    height:600px;
+    margin:0px auto 60px auto;
     
 }
  
 /*NAVIGATION*/
 
-header nav {
+.header .menu {
+
     margin:40px;
     text-align: right;
     justify-content: flex-end;
 
-
 }
 
-header nav a {
+.header .menu .item-menu {
+
     text-decoration: none;
     color:#fb1c37;
     font-size: 16px;
@@ -40,28 +45,29 @@ header nav a {
     margin: 0px 20px;
 }
 
-header nav a:hover {
+.header .menu .item-menu:hover {
     border-bottom: 2px solid  #fb1c37;
 
 }
 
-header nav a:active {
+.header .nav .a:active {
+
     color:  #fb1c37;
     border: 2px solid  #fb1c37;
 }
 
-.name-container {
+.header .name-container {
+
     margin: auto;
     justify-self: center;
     border: 2px solid  #fb1c37;
     align-self: center;
-
     border-radius: 5px;
     padding:20px 40px;
 
 }
 
-.name-container h1{
+.header .name-container h2{
     text-align: center;
     font-size: 58px;
     color: #fb1c37;
@@ -78,164 +84,157 @@ header nav a:active {
 }
 
 
-
-
-main .about{
-    text-align: center; 
-    padding: 60px 0px;
-    background:#2a2b2e;
+.main {
+    background: #2a2b2e;
+    margin:60px 0px;
 }
 
-main .about h2{
+.main .about{
+    text-align: center; 
+    margin: auto;
+    padding:60px 60px;
+}
+
+.main .about h3{
     font-family: 'Open Sans', sans-serif;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 300;
     color:#fb1c37;
     margin-bottom: 20px;
 }
 
-main .about p {
+.main .about p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #e6e6e6;
     font-weight: bold;
-    margin: 0px 40px;
+    margin: 20px;
 
 }
 
-main .works {
+.main .skills {
     background:#222222;
     padding: 60px 0px; 
     margin:auto;
 }
 
-main .works h2 {
+.main .skills h3 {
 
     font-family: 'Open Sans', sans-serif;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 300;
     color:#fff;
     text-align: center;
     display: block;
+    margin-bottom: 20px;
+
 }
-.works-container {
+
+.main .skills .skills-container {
+
     display: flex;
-    align-content: space-between;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+
 }
-.work-container {
+
+.main .skills .skills-container .skill-container {
+
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: #fff;
-    margin: 30px;
+    margin:0px 30px 60px 30px;
     width:235px;
-
 
 }
 
 
 
-.description{
+.main .skills .skills-container .skill-container .description {
+
     color:#fff;
     font-family: "Open Sans", sans-serif;
     text-align: center;
-}
-
-
-
-
-.form-container {
-    padding: 60px 0px;
-    text-align: center;
-     background: #2a2b2e;
-
-}
-    
-.form-container h2 {
-    margin-bottom: 60px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 28px;
-    font-weight: 300;
-    color:#fb1c37;
-
-
-   
-}
-.button{
-    display: block;
-    background: #fb1c37;
-    border-radius: 5px;
-    height: 40px;
-    width: 120px;
-    color: #fff;
-    font-size: 20px;
-    border: none;
-    margin: 40px auto;
-}
-.button:hover{
-    background: #fc4258;
-}
-.button:active {
-    background: fc4258;
-    border-bottom: 2px solid rgba(0,0,0,0.5)
-}
-
-
-.message {
-    border: 2px solid #fb1c37 ;
-    font-size: 20px;
-    height: 130px;
-    display: block;
-    margin: auto;
-    width: 600px;
-    border-radius: 5px;
-
-}
-.name {
-    border: 2px solid #fb1c37;
-    font-size: 20px;
-    height: 45px;
-    margin: 10px;
-    width: 290px;
-    border-radius: 5px;
-
-}
-.email {
-    border: 2px solid #fb1c37;
-    font-size: 20px;
-    height: 45px;
-    margin: 10px;
-    width: 290px;
-    border-radius: 5px;
-    
-
 
 }
 
-h4{
+
+.main .skills .skills-container .skill-container h4 {
+
     color: #fb1c37;
     font-weight:bold;
     font-family: "Open Sans", sans-serif;
     margin-bottom: 10px;
+
+}
+
+.main .works{
+    padding: 60px;
+
+}
+
+.main .works h3 {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    color:#fb1c37;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.main .works .works-container {
+    
+     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.main .works .works-container .work-container {
+
+    width: 235px;
+    margin: 60px auto;
+
+}
+
+.main .works .works-container .work-container h4 {
+
+    color: #fb1c37;
+    font-weight:bold;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.main .contact {
+    padding:60px 0px;
+    margin: auto;
+    background:#222222;
+
+}
+
+.main .contact h3 {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    color:#fff;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.main .contact div {
+    margin: auto;
 }
 
 
 
-@media and screen(min-width: 990px){
-    .works-container{
-        justify-content: space-between;
-    }
-    body{
-        background: #fff;
-    }
-}
+/*MEDIA QUERYS*/
 
-@media screen and (max-width: 960px){
-    .works-container{
-        justify-content: space-around;
-    }
-}
 @media screen and (max-width: 560px){
     .name-container {
         width: 280px;
@@ -249,3 +248,4 @@ h4{
     margin: 0px 10px;
    }
 }
+
