@@ -42,7 +42,7 @@ body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 5px;
-    margin: 0px 20px;
+    margin: 0px 20px 40px 20px ;
 }
 
 .header .menu .item-menu:hover {
@@ -228,7 +228,17 @@ body {
 }
 
 .main .contact div {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-container i {
+    color: #e6e6e6;
+    font-size: 250px;
+}
+
+.icon-container i:hover {
+    color: #fff;
 }
 
 
@@ -240,8 +250,18 @@ body {
         width: 280px;
         padding: 10px 20px;
     }
-    nav{
-        align-self: center;
+    
+    nav {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        align-content: center;
+        justify-content: center; 
+
+    }
+
+    nav a{
+        
 
     }
    header nav a{
